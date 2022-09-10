@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        /* color: white; */
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg');
+    }
+
+    .left {
+
+        /* border: 2px solid white; */
+        display: inline-block;
+        position: absolute;
+        left: 14px;
+        top: 20px;
+        color: white;
+
+    }
+
+    .left img {
+        width: 106px;
+    }
+
+    .mid {
+        /* border: 2px solid white; */
+        display: block;
+        /* background-color: rgb(212, 170, 178); */
+        margin: 20px auto;
+        width: 37%;
+    }
+
+    .right {
+        /* border: 2px solid purple; */
+        display: inline-block;
+        position: absolute;
+        right: 14px;
+        top: 20px;
+    }
+    .right button{
+        text-decoration: none;
+    }
+    .right button a:hover{
+        color: gray;
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 1px 10px;
+        margin: 3px 7px;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        width: 95px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        padding: 30px 9px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .container {
+        width: 36%;
+        padding: 55px 150px;
+        margin: 114px 330px;
+        /* border: 2px solid red; */
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        color: white;
+        text-align: center;
+    }
+    
+    .container button {
+        display: block;
+        margin: auto;
+        text-decoration: none;
+    }
+    .container button a:hover{
+        color: rgb(77, 83, 167);
+        text-decoration: underline;
+    }
+
+    .from-group input {
+        display: block;
+        text-align: center;
+        width: 278px;
+        padding: 5px 103px;
+        margin: 6px auto;
+        font-size: 15px;
+        font-family: 'Baloo Bhai 2', cursive;
+        /* border: 2px solid white; */
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <header class="heade">
+        <!-- left box for logo -->
+
+        <div class="left">
+            <img src="logo2.jpg" alt="">
+            <div>Raja's Fitness</div>
+
+            <!-- mid for navigation bar -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+                <!-- right for contact detail -->
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"><a href="">Call Us</a> </button>
+            <button class="btn"><a href="">Email Us</a> </button>
+
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Kolkata</h1>
+        <form action="backend.php" class="frm">
+            <div class="from-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter Your Weight">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter Your Number">
+            </div>
+            <button class="btn">
+               <a href="">Submit</a> </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
